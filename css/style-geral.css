@@ -1,0 +1,474 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/* Geral */
+
+body{
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    color: rgb(21, 21, 49);
+}
+
+
+/* Textos */
+
+h1{
+    font-size: 45px;
+    font-weight:100;
+    margin: 0;
+    color: rgb(21, 21, 49);
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight:100;
+    margin-bottom: 30px;
+    color: rgb(21, 21, 49);
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;    
+    font-weight: 400;
+
+}
+p{
+    font-size: 16px;
+    color: rgb(21, 21, 49);
+}
+
+.conteudo p {
+    color: rgb(170, 170, 170);
+}
+
+/* seções */
+
+#capa{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    background:url(../img/home1-arroz.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+      
+}
+
+#cozinharia{
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#cardapio{
+    height: 950px;
+    background: rgb(252, 217, 20);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#eventos{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    background: rgb(248, 248, 248);
+    padding: 50px 0;
+}
+
+/* video cardapio */
+
+.video{
+    display: flex;
+}
+
+iframe{
+    width: 100%;
+    display: block;
+ 
+}
+
+/*galeria cozinharia*/
+
+.mini-galeria{
+    background: white;
+}
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+.galeria a{
+    flex: inherit;
+    width: 16%;
+}
+
+.galeria img{
+    width: 100%;
+}
+/* elementos */
+
+.linha{
+    margin-bottom: 30px;
+    width: 120px;
+    height: 3px;
+    background: rgb(255, 217, 0);
+}
+
+.linha-2{
+    width: 120px;
+    height: 3px;
+    background: rgb(29, 20, 49);
+    margin: 0 auto;
+}
+
+/* links */
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.link-preto{
+    border: 2px solid rgb(29, 20, 49);
+    margin: 0 5px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(29, 20, 49);
+    font-size:15px;
+  
+}
+
+
+.link-preto:hover{
+    color: white;
+    background: rgb(29, 20, 49);
+}
+
+.link-amarelo{
+    border: 2px solid rgb(252, 217, 20);
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(29, 20, 49);
+    font-size:14px;
+    background: rgb(252, 217, 20);  
+}
+
+
+/* diagramação */
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coluna-1{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-2{
+    width: 48%;
+}
+
+    .fotos{
+        width: 100%;
+        margin: 25px 0;
+        display: block;
+    }
+
+#eventos .coluna-1{
+    order: 1;
+}
+
+/* galeria home */
+
+.galeria-cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0;
+    width: 100%;
+}
+
+.galeria-cardapio figure{
+    flex: 1 1 33%;
+    min-width: 210px;;
+    color: grey;
+    text-align: left;
+    font-weight: 100;
+    position: relative;
+}
+
+figure img{
+    width:100%; 
+}
+
+figcaption{
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    height: 22%;
+    
+}
+
+.figactive{
+    height: 35%;
+    cursor: default;
+}
+
+.figdescricao{
+    visibility: hidden;
+    position: absolute;
+}
+
+input[type=submit]{
+    width: 15%;
+}
+
+
+/*tabela*/
+
+table{
+    background: white;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;                                                                           
+}
+
+
+th{
+    color: rgb(165, 165, 165);
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+    text-align: left;
+}
+
+td{
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    text-align: left;
+}
+
+/*contato*/
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.icones p{
+    margin: 0 10px;
+}
+
+
+#contato .colunas{
+    display: flex;
+    align-items: flex-start;
+}
+
+span{
+    font-weight: 700;
+}
+
+#contato iframe{
+    margin: 35px 0;
+}
+
+input, textarea{
+    padding: 10px;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    box-sizing: border-box;
+}
+
+select{
+    width: 50%;
+    height: 30px;
+    background: white;
+}
+
+.pergunta{
+    margin: 15px 0 5px 0;
+}
+
+/* javascript */
+
+.mudacor{
+    background: rgb(242, 253, 203);
+}
+
+.active{
+    visibility: visible;
+    cursor: default;
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+
+
+@media (max-width:1440px){
+    .container{
+        width: 90%;
+    }
+
+    #cardapio{
+        height: 850px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+
+    .container{
+        width: 95%;
+    }
+
+    #cozinharia, #eventos{
+        height: 350px;
+    }
+
+    #cardapio{
+        height: 600px;;
+    }
+
+    h2{
+        margin: 0 0 20px 0;
+    }
+
+
+    .galeria-cardapio figure{
+        width: 35%;
+    }
+
+    
+
+    
+}
+
+@media (max-width:425px) {
+
+    h2{
+        text-align: center;
+    }
+
+    .link{
+        justify-content: center;
+    }
+
+
+    .colunas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna-1, .coluna-2 {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    #cozinharia{
+        height: 350px;
+    }
+ 
+
+    #cozinharia img{
+        display: none;
+    }
+
+    .linha, .linha-2{
+        margin: 0 auto 30px auto;
+    }
+
+    #cardapio{
+        height: 1920px;
+    }
+ 
+
+    #eventos{
+        height: 650px;
+    }
+ 
+    form{
+        text-align: center;
+    }
+
+    #eventos .coluna-1{
+        order: 0;
+    }
+
+    .icones{
+        margin: 0 auto;
+    }
+
+   
+   
+}

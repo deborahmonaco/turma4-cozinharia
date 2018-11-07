@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cozinharia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style-geral.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-header.css" />
+</head>
+<body>
+
+<header>
+        <nav class="container">
+    
+            <!-- logo menu -->
+    
+            <img src="img/logo-cozinharia.svg" alt="logo cozinharia em azul">
+    
+            <!-- menu hamburguer -->
+    
+            <input id="check" type="checkbox" class="checkmenu">
+    
+            <label for="check">
+                <div class="menu-hamb">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+    
+            <ul class="ul-mbl">
+                    <li ><a href="index.html" >Home</a></li>
+                    <li><a href="cozinharia.html">A Cozinharia</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="empresariais.html">Empresariais</a></li>
+                    <li><a href="casamentos.html">Casamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+            </ul>
+    
+            <!-- menu desk -->
+    
+            <ul class="menu">
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="cozinharia.html">A Cozinharia</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li class="drop"><a>Eventos</a>
+                    <ul class="content">
+                        <li><a href="empresariais.html">Empresariais</a></li>
+                        <li><a href="casamentos.html">Casamentos</a></li>
+                    </ul>             
+                </li>
+                <li class="linhamenu"><a href="contato.html">Contato</a></li>
+            </ul>
+    
+        </nav>
+</header>
+
+ <section id="contato">
+    <div class="container">
+
+        <h2>Contato</h2>
+        <div class="linha"></div>
+
+        <div class="colunas">
+            <div class="coluna-1 texto-contato">
+                <p>Rua Frei Caneca, 920 - Consolação
+                    <br>
+                    São Paulo - SP
+                </p>
+                <div class="icones">
+                <img src="img/icone-fone.svg">
+                <p>11 4443 0324</p>
+                </div>
+                <div class="icones">
+                <img src="img/icone-mail.svg">
+                <p>contato@acozinharia.com.br</p>
+                </div>
+            </div>
+
+            <div class="coluna-2">
+                <p><span>Horário de funcionamento</span>
+                <br>
+                Segunda a Quarta das 12h às 15h/19h30 às 23h
+                <br>
+                Quinta e Sexta das 12h às 15h / 19h30 às 00h
+                <br>
+                Sábado das 12h às 00h - direto
+                <br>
+                Domingo das 12h às 17h
+                </p>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.6885757298126!2d-46.65695871583254!3d-23.55489432984193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5834abda5c89%3A0xed8b13863aac7f03!2sR.+Frei+Caneca%2C+920+-+Consola%C3%A7%C3%A3o%2C+S%C3%A3o+Paulo+-+SP%2C+01307-002!5e0!3m2!1spt-BR!2sbr!4v1541215519651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <h3>Entre em contato conosco!</h3>
+
+        <form>
+            <div class="principal">
+                <div class="pergunta">
+                    <label for="nome">Nome completo</label>
+                </div>
+                <div class="resposta">
+                    <input type="text" name="nome">
+                </div>
+            </div>
+
+            <div class="principal">
+                <div class="pergunta">
+                    <label for="email">Email</label>
+                </div>
+                <div class="resposta">
+                    <input type="text" name="email">
+                </div>
+            </div>
+
+            <div class="principal">
+                <div class="pergunta">
+                    <label for="assunto">Assunto</label>
+                </div>
+                <div class="resposta">
+                    <select name="assunto">
+                        <option value="criticas">Críticas e Sugestões</option>
+                        <option value="fornecedores">Fornecedores</option>
+                        <option value="reservas">Reservas</option>
+                        <option value="trabalhe">Trabalhe conosco</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="principal">
+                <div class="pergunta">
+                    <label>Mensagem</label>
+                </div>
+                <div class="resposta">
+                    <textarea name="mensagem"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+
+
+
+    </div>
+ </section>
+
+ <footer>
+
+    <div class="container">
+
+        <div class="colunas">
+
+            <div class="endereco">
+                <p> <strong>A Cozinharia</strong>
+                    <br>
+                    Rua Frei Caneca, 920 - Consolação
+                    <br>
+                    Tel: 11 4443 0324
+                    <br>
+                    e-mail:contato@acozinharia.com.br
+                </p>
+            </div>
+
+            <div class="horario">
+                <p> <strong>Horário de funcionamento</strong>
+                    <br>
+                    Segunda a quarta das 12h às 15h / 19h30 às 23h
+                    <br>
+                    Quinta a Sexta das 12h às 15h / 19h30 às 00h
+                    <br>
+                    Sábado das 12h às 00h - direto
+                    <br>
+                    Domingo das 12h às 17h
+                </p>
+            </div>
+
+            <div class="sociais">
+                <a href="#">
+                    <img src="http://projeto-cozinharia.habemus.website/img/facebook-01.png" alt="link para facebook da Cozinharia">
+                </a>
+
+                <a href="#">
+                    <img src="http://projeto-cozinharia.habemus.website/img/twitter-01.png" alt="link para twitter da Cozinharia">
+                </a>
+
+                <a href="#">
+                    <img src="http://projeto-cozinharia.habemus.website/img/linkedin-01.png" alt="link para linkedin da Cozinharia">
+                </a>
+                
+            </div>
+        
+        </div>
+
+
+    </div>
+
+</footer>
+
+<script src="script/script.js"></script>
+    
+</body>
+</html>
